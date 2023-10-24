@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard-Admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel='icon' type='image/svg+xml' href='data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%20%3cstyle%3e%20rect%20{%20stroke:%20%232A6FF6;%20}%20@media%20(prefers-color-scheme:%20dark)%20{%20rect%20{%20stroke:%20%23448BFD;%20}%20}%20%3c/style%3e%20%3crect%20x='0.5'%20y='0.5'%20width='15'%20height='15'%20rx='1.5'/%3e%20%3cstyle%3e%20path%20{%20fill:%20%232A6FF6;%20}%20@media%20(prefers-color-scheme:%20dark)%20{%20path%20{%20fill:%20%23448BFD;%20}%20}%20%3c/style%3e%20%3cpath%20d='M11%208L6.5%2010.5981L6.5%205.40192L11%208Z'/%3e%20%3c/svg%3e' />
+    <link rel='alternate icon' href='data:image/x-icon;base64,AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAD3cCgg9m8q1/ZvKv/2byr/9m8q//ZvKv/2byr/9m8q//ZvKv/2byr/9m8q//ZvKv/2byr/9m8q//ZvKvf3cCgg9m8r9+9wJBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADvcCQY9m8q//ZvKv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZvKv/2byr/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2byr/9m8q/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9m8q//ZvKv8AAAAAAAAAAAAAAAAAAAAAAAAAAIA4EAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZvKv/2byr/AAAAAAAAAAAAAAAAAAAAAAAAAAB7OBV/9m8q//RwKWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2byr/9m8q/wAAAAAAAAAAAAAAAAAAAAAAAAAAezgVf/ZvKv/2byr/9m8q93s4FW8AAAAAAAAAAAAAAAAAAAAA9m8q//ZvKv8AAAAAAAAAAAAAAAAAAAAAAAAAAHs4FX/2byr/9m8q//ZvKu98NxYvAAAAAAAAAAAAAAAAAAAAAPZvKv/2byr/AAAAAAAAAAAAAAAAAAAAAAAAAAB7OBV/9m8q//JwKV8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2byr/9m8q/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9m8q//ZvKv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZvKv/2byr/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2byr/9m8q/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9m8q//ZvKv/7cCQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA83AsGPZvKvfvcCgg9m8r9/ZvKv/2byr/9m8q//ZvKv/2byr/9m8q//ZvKv/2byr/9m8q//ZvKv/2byr/9m8q//ZvKtfvcCgggAEAAH/+AAB//gAAf/4AAH/+AAB//gAAfv4AAH4+AAB+PgAAfv4AAH/+AAB//gAAf/4AAH/+AAB//gAAgAEAAA==' />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet'>
+
+    <script type="text/javascript">
+        if (location.href.toString().indexOf('file://localhost/') == 0) {
+            location.href = location.href.toString().replace('file://localhost/', 'file:///');
+        }
+    </script>
+    <!--<link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/debug/styles/debug.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/handoff.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/codemirror.css" />-->
+  <link rel="stylesheet" crossorigin href="/assets/index-36p2qAxn.css">
+</head>
+<body scroll="no" class="hashover" style="overflow: hidden;">
+    <div id="topPanel">
+        <div id="interfaceControlFrame">
+            <div id="interfaceControlFrameLeft">
+                <div id="interfaceControlFrameMinimizeContainer">
+                    <a title="Collapse" id="interfaceControlFrameMinimizeButton">
+                        <div id="minimizeArrow" class="minimizeButtonHover minimizeIcon"></div>
+                        <div id="minimizeX" class="minimizeButton minimizeIcon"></div>
+                    </a>
+                </div>
+                <div id="interfaceControlFrameCloseContainer">
+                    <a title="Close" id="interfaceControlFrameCloseButton">CLOSE</a>
+                </div>
+
+                <div id="sitemapControlFrameContainer" title="Project Pages">
+                    <div id="projectControlFrameHeaderContainer">
+                        <ul id="projectControlFrameHeader"></ul>
+                    </div>
+
+                    <div id="interfacePageNameContainer">
+                        <div id="interfacePageNameButton" class='pageNameHeader'>
+                            &nbsp;
+                        </div>
+                        <div id="interfacePageCount" class='pageCountHeader'>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="interfaceAdaptiveViewsContainer" title="Adaptive Views">
+                    <div id="interfaceAdaptiveViewsIconButton">&nbsp;</div>
+                    <div id="interfaceAdaptiveViewsButton" class='adaptiveViewHeader'>
+                        &nbsp;
+                    </div>
+                    <div id="adaptiveViewsDropdown" class="caret"></div>
+                </div>
+            </div>
+
+            <div id="interfaceControlFrameContainer">
+                <div id="handoffControlFrameHeaderContainer">
+                    <ul id="handoffControlFrameHeader"></ul>
+                </div>
+                <div id="interfaceControlFrameLogoContainer">
+                    <!--<div id="previewNotice">
+                        Local Preview
+                    </div>-->
+                </div>
+            </div>
+
+            <div id="interfaceControlFrameRight">
+                <div id="publishContainer">
+                    <a id="publishButton">Share Prototype</a>
+                </div>
+
+                <div id="scaleMenuButton" title="Zoom and Scale">
+                    <div id="scaleValue">100%</div>
+                    <div id="expandScaleArrow" class="caret"></div>
+                </div>
+
+                <div id="inspectControlFrameHeaderContainer">
+                    <ul id="inspectControlFrameHeader">
+                        <li id="overflowBtn">
+                            <a id="overflowMenuButton" title="Options"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="separatorContainer">
+                    <div class="separator"></div>
+                </div>
+
+        
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="outerContainer">
+        <div id="clippingBounds">
+            <div id="clippingBoundsScrollContainer"></div>
+        </div>
+
+        <div id="mHideSidebar"></div>
+        <div id="lsplitbar" class="splitbar"></div>
+        <div id="mainPanel">
+            <div id="mainPanelContainer" style="position: relative; width:100%; height: 100%;">
+                <div id="clipFrameScroll" style="position: relative; width:100%; height: 100%; background-color: #ffffff;">
+                    <iframe id="mainFrame" name="mainFrame" width="100%" height="100%" src="about:blank" frameborder="0" style="display: block;position:absolute;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="rsplitbar" class="splitbar"></div>
+    </div>
+
+    <div id="maximizePanelContainer" class="maximizePanelContainer">
+        <div id="maximizePanelOver">
+            <div id="maximizePanel" title="Expand" class="maximizePanelOver">
+                <div id="maximizeButton" class="maximizeButton maximizeIcon"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobileControlFrameContainer"></div>
+
+<!-- 10.0.0.3905 -->
+<script src="resources/scripts/jquery-3.2.1.min.js"></script>
+<script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+<script src="resources/scripts/axutils.js"></script>
+<script src="resources/scripts/messagecenter.js"></script>
+<script src="resources/scripts/player/axplayer.js"></script>
+<script src="resources/scripts/player/init.js"></script>
+
+
+</body>
+</html>
